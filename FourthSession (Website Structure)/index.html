@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Stylesheet -->
+<style>
+
+    /* Global Styles */
+    *{
+        font-family: Helvetica;
+    }
+
+    /* Container/ Parent Styles */
+    /* Element/ Parent Styles */
+    header, nav, article, section, aside{
+        padding:20px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+ 
+    /* Flex Container Style */
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    /* Individual/ Child Styles */
+    /* Flex Item Style */
+    .flex-item{
+        flex: 1 0 calc(33.33% - 20px);
+        background-color: rgb(160, 231, 208);
+    }
+
+    header, footer{
+        background-color: #6e6e6e;
+        padding: 20px;
+    }
+
+</style>
+
+<!-- Start of HTML Body -->
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Header Text -->
+        <h1>Header</h1>
+    </header>
+
+    <!-- Flex Container Sample -->
+    <div class="flex-container">
+
+        <!-- NavBar -->
+        <nav class="flex-item">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <section class="flex-item">
+            <h2>Section</h2>
+            <p>This is a section.</p>
+        </section>
+
+        <!-- Article -->
+        <article class="flex-item">
+            <h2>Article</h2>
+            <p>This is an article.</p>
+        </article>
+
+        <!-- Aside -->
+        <aside class="flex-item">
+            <h2>Aside</h2>
+            <p>This is an aside.</p>
+        </aside>
+
+    </div>
+
+    <!-- Footer --> 
+    <footer>
+        <p>This is a footer.</p>
+    </footer>        
+
+</body>
+</html>
